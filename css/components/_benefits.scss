@@ -1,0 +1,63 @@
+.benefits {
+  text-align: center;
+}
+
+.benefits__list {
+  display: flex;
+  align-items: center;
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 56px;
+  position: relative;
+  &:last-child {
+    margin-right: 0;
+    &:before {
+      display: none;
+    }
+  }
+  &:before {
+    content: url("../pics/circles.svg");
+    position: absolute;
+    top: 58px;
+    right: -61px;
+  }
+}
+
+.benefits__icon {
+  width: 128px;
+  height: 128px;
+  position: relative;
+  background-color: $whitish;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.benefits__icon-pic {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 59%;
+  left: 63%;
+  transform: translate(-50px, -50px);
+}
+
+.benefits__info {
+  max-width: 279px;
+}
+
+.benefits__info-title {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.benefits__info-text {
+  color: $grey;
+  font-weight: 300;
+  line-height: 21px;
+}

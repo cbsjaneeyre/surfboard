@@ -1,0 +1,17 @@
+.welcome {
+  background: url(../pics/surf.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 100vh;
+  min-height: 652px;
+  color: $white;
+  }
+
+.welcome__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 28px 0 61px;
+}

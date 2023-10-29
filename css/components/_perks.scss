@@ -1,0 +1,23 @@
+.perks__list {
+  display: flex;
+}
+
+.perks__item {
+  display: flex;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.perks__pic {
+  width: 41px;
+  height: 41px;
+  margin-right: 11px;
+}
+
+.perks__info {
+  max-width: 90px;
+  font-size: 16px;
+  font-weight: 700;
+}

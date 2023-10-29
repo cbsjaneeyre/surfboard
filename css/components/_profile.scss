@@ -1,0 +1,29 @@
+.profile {
+  background-color: $profile;
+  display: flex;
+  align-items: center;
+  padding: 42px 142px 42px 42px;
+  margin-bottom: 15px;
+}
+
+.profile__icon {
+  margin-right: 40px;
+}
+
+.profile__info-title {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.profile__info p {
+  font-weight: 400;
+  color: $grey;
+  margin-bottom: 25px;
+  line-height: 22px;
+}
+
+.profile__info-name {
+  font-weight: 500;
+}
+

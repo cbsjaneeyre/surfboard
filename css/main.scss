@@ -1,0 +1,51 @@
+$container-width: 950px;
+$main-fontsize: 18px;
+$regular: #FEDB3F;
+$hover: #FFD517;
+$white: #FFF;
+$grey: #666;
+$black: #000;
+$blackish: #292929;
+$whitish: #F2F5F4;
+$profile:  #F8FAF9;
+
+$z-scroll: 100;
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
+
+@import "./components/layout";
+
+@import "./components/welcome";
+
+@import "./components/header";
+
+@import "./components/content";
+
+@import "./components/button";
+
+@import "./components/button";
+
+@import "./components/perks";
+
+@import "./components/why";
+
+@import "./components/reason";
+
+@import "./components/benefits";
+
+@import "./components/comments";
+
+@import "./components/profile";
+
+@import "./components/users";
+
+@import "./components/users-active-icon";
+
+@import "./components/order";
+
+@import "./components/form";
+
+@import "./components/radio";
+
+@import "./components/scroll";

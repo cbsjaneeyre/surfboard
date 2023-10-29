@@ -1,0 +1,22 @@
+.comments {
+  background-color: $white;
+  height: 100vh;
+  min-height: 652px;
+  color: $blackish;
+  }
+
+.comments__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 58px 0 63px;
+}
+
+.comments-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+  text-align: center;
+}
