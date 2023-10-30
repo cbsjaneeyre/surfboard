@@ -84,7 +84,7 @@ footer {
 }
 
 .welcome {
-  background: url(../pics/surf.jpeg);
+  background: url(../pics/surf1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -456,9 +456,13 @@ footer {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.users-active--active {
+.users-active--active, .users-active:hover {
   border-color: #FEDB3F;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .users__link {
@@ -470,7 +474,7 @@ footer {
 }
 
 .order {
-  background: url(../pics/surf2.jpeg);
+  background: url(../pics/surf2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;

@@ -5,8 +5,10 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  &--active {
+  transition: .5s;
+  &--active, &:hover {
     border-color: $regular;
+    transition: .5s;
   }
 }
 
