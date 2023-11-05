@@ -1,17 +1,25 @@
 .benefits {
   text-align: center;
+
+  @include phone {
+    text-align: initial;
+  }
 }
 
 .benefits__list {
   display: flex;
   align-items: center;
+
+  @include phone {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 56px;
+  margin-right: rem(44px);
   position: relative;
   &:last-child {
     margin-right: 0;
@@ -22,42 +30,74 @@
   &:before {
     content: url("../pics/circles.svg");
     position: absolute;
-    top: 58px;
-    right: -61px;
+    top: rem(58px);
+    right: rem(-61px);
+    
+    @include tablet {
+      display: none;
+    }
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  @include phone {
+    flex-direction: row;
+    margin-right: 0;
+    margin-bottom: rem(31px);
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 .benefits__icon {
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   position: relative;
   background-color: $whitish;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 18px;
-}
+  margin-bottom: rem(18px);
+  .benefits__icon-pic {
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &--fit {
+      width: 44px;
+    }
+  }
 
-.benefits__icon-pic {
-  width: 68px;
-  height: 68px;
-  position: absolute;
-  top: 59%;
-  left: 63%;
-  transform: translate(-50px, -50px);
+  @include phone {
+    margin-bottom: 0;
+    margin-right: rem(12px);
+  }
 }
 
 .benefits__info {
-  max-width: 279px;
+  max-width: rem(279px);
 }
 
 .benefits__info-title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+
+  @include tablet {
+    margin-bottom: rem(7px);
+  }
+
+  @include phone {
+    margin-bottom: rem(10px);
+  }
 }
 
 .benefits__info-text {
   color: $grey;
   font-weight: 300;
-  line-height: 21px;
+  line-height: rem(21px);
 }

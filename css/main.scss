@@ -8,11 +8,18 @@ $black: #000;
 $blackish: #292929;
 $whitish: #F2F5F4;
 $profile:  #F8FAF9;
+$socials: #B3B3B3;
+$header: #1968B1;
+
+$tablet: 768px;
+$phone: 480px;
 
 $z-scroll: 100;
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
+
+@import "./media";
 
 @import "./components/layout";
 
@@ -51,3 +58,11 @@ $z-scroll: 100;
 @import "./components/scroll";
 
 @import "./components/title";
+
+@import "./components/find";
+
+@import "./components/footer";
+
+@import "./components/contacts";
+
+@import "./components/burger";

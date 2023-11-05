@@ -4,8 +4,17 @@
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
-  min-height: 652px;
+  min-height: rem(652px);
   color: $white;
+  
+  @include tablet {
+    background-color: $header;
+    background-position: top rem(94px) right rem(-142px);
+  }
+  @include phone {
+    background-color: $header;
+    background-position: top rem(94px) right rem(-245px);
+  }
   }
 
 .welcome__container {
@@ -13,5 +22,4 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 28px 0 61px;
 }

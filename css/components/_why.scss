@@ -1,7 +1,7 @@
 .why {
   background-color: $white;
   height: 100vh;
-  min-height: 652px;
+  min-height: rem(652px);
   color: $blackish;
   }
 
@@ -10,5 +10,4 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding: 105px 0 112px;
 }

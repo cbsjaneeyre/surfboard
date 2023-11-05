@@ -1,19 +1,36 @@
 .form {
   display: flex;
   font-weight: 400;
+
+  @include tablet {
+    flex-direction: column;
+    padding: 0 17%;
+  }
+
+  @include phone {
+    padding: 0;
+  }
 }
 
 .form__column {
   flex: 1;
-  margin-right: 27px;
+  margin-right: rem(27px);
   &:last-child {
     margin-right: 0;
+  }
+
+  @include tablet {
+    margin-right: 0;
+    margin-bottom: rem(14px);
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 .form__row {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
   &:last-child {
     margin-bottom: 0;
   }
@@ -21,7 +38,7 @@
 
 .form__box {
   flex: 1;
-  margin-right: 17px;
+  margin-right: rem(17px);
   &:last-child {
     margin-right: 0;
   }
@@ -30,26 +47,39 @@
 .form__input {
   width: 100%;
   border: none;
-  border-radius: 5px;
-  padding: 18px 12px;
+  border-radius: rem(5px);
+  padding: rem(18px) rem(12px);
   border: solid 3px transparent;
   &:focus {
     border-color: $hover;
     outline: none;
   }
   &--textarea {
-    height: 152px;
+    height: rem(152px);
     resize: none;
-    margin-bottom: 21px;
+    margin-bottom: rem(21px);
+  }
+
+  @include tablet {
+    padding: rem(8px) rem(10px);
+    &--textarea {
+      height: rem(82px);
+    }
   }
 }
 
 .form__buttons {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+
+  @include phone {
+    justify-content: center;
+  }
 }
 
 .form__order {
-  margin-top: 47px;
+  display: flex;
+  justify-content: center;
+  margin-top: rem(47px);
 }

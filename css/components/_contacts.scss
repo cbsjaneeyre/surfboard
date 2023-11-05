@@ -1,0 +1,20 @@
+.contacts {
+  display: flex;
+}
+
+.contacts__icon {
+  flex-shrink: 0;
+  margin-right: rem(6px);
+  .contacts__icon-pic {
+    width: 13px;
+    height: 15px;
+    fill: $white;
+    &--black {
+      fill: $black;
+    }
+  }
+}
+
+.contacts__tel {
+  white-space: nowrap;
+}

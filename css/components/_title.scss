@@ -1,10 +1,23 @@
 .title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: rem(35px);
   text-align: center;
   &--reason {
-    margin-bottom: 12px;
+    margin-bottom: rem(12px);
+  }
+
+  @include tablet {
+    &--reason {
+      margin-bottom: rem(16px);
+    }
+  }
+
+  @include phone {
+    &--reason {
+      margin-bottom: rem(9px);
+      line-height: rem(36px);
+    }
   }
 }

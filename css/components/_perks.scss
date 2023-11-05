@@ -1,23 +1,38 @@
+.perks {
+  padding-bottom: rem(61px);
+
+  @include tablet {
+    display: none;
+  }
+
+  @include phone {
+    display: none;
+  }
+}
+
 .perks__list {
   display: flex;
 }
 
 .perks__item {
   display: flex;
-  margin-right: 30px;
+  margin-right: rem(30px);
   &:last-child {
     margin-right: 0;
   }
 }
 
-.perks__pic {
-  width: 41px;
-  height: 41px;
-  margin-right: 11px;
+.perks__icon {
+  margin-right: rem(11px);
+  .perks__icon-pic {
+    width: 41px;
+    height: 41px;
+    fill: $white;
+  }
 }
 
 .perks__info {
-  max-width: 90px;
-  font-size: 16px;
+  max-width: rem(90px);
+  font-size: rem(16px);
   font-weight: 700;
 }

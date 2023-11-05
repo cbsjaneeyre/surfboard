@@ -1,7 +1,7 @@
 .button {
-  padding: 21px 41px;
+  padding: rem(21px) rem(41px);
   border-radius: 100px;
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 800;
   color: $black;
   border: none;
@@ -19,11 +19,18 @@
     text-transform: none;
     color: $white;
     padding: 0;
-    margin-left: 22px;
+    margin-left: rem(22px);
     transition: .5s;
     &:hover {
       color: $regular;
       transition: .5s;
+    }
+  }
+
+  @include phone {
+    font-size: rem(19px);
+    .button--header {
+      padding: rem(21px) rem(36px);
     }
   }
 }

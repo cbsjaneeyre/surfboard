@@ -2,29 +2,39 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: $main-fontsize;
+  @include tablet {font-size: $main-fontsize - 1px};
+  @include phone {font-size: $main-fontsize - 2px};
+}
+
 body, html {
   height: 100%;
  }
 
 body {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: $main-fontsize;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
 }
 
+svg {
+  width: 100%;
+  height: auto;
+}
+
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $container-width + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container  {
-  width: $container-width;
+  width: 96%;
+  max-width: $container-width;
   margin: 0 auto;
 }
 

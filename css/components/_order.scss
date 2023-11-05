@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   height: 100vh;
-  min-height: 652px;
+  min-height: rem(652px);
   color: $white;
   }
 
@@ -13,5 +13,4 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding: 62px 0 85px;
 }

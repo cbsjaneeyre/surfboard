@@ -2,25 +2,64 @@
   background-color: $profile;
   display: flex;
   align-items: center;
-  padding: 42px 142px 42px 42px;
-  margin-bottom: 15px;
+  padding: rem(42px) rem(142px) rem(42px) rem(42px);
+  margin-bottom: rem(15px);
+
+  @include tablet {
+    flex-direction: column;
+    padding: rem(56px) rem(24px) rem(46px) rem(24px);
+    margin-bottom: rem(32px);
+  }
 }
 
 .profile__icon {
-  margin-right: 40px;
+  margin-right: rem(40px);
+
+  @include tablet {
+    margin-right: 0;
+    margin-bottom: rem(32px);
+    width: 130px;
+    height: 130px;
+  }
+
+  @include phone {
+    margin-bottom: rem(27px);
+  }
 }
 
 .profile__info-title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
+
+  @include tablet {
+    margin-bottom: rem(16px);
+  }
+
+  @include phone {
+    margin-bottom: rem(12px);
+  }
+}
+
+.profile__info {
+  @include tablet {
+    text-align: center;
+  }
 }
 
 .profile__info p {
   font-weight: 400;
   color: $grey;
-  margin-bottom: 25px;
-  line-height: 22px;
+  margin-bottom: rem(25px);
+  line-height: rem(22px);
+
+  @include tablet {
+    margin-bottom: rem(16px);
+  }
+
+  @include phone {
+    margin-bottom: rem(12px);
+  }
 }
 
 .profile__info-name {
