@@ -1,11 +1,19 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $white;
   min-height: rem(87px);
   font-size: rem(21px);
   font-weight: 400;
-  padding: rem(20px) 0;
+  padding: rem(25px) 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @include phone {
     flex-direction: column;

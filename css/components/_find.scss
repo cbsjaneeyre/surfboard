@@ -5,15 +5,8 @@
   min-height: rem(745px);
   }
 
-  .find__container {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-
   .find__map {
     background: url(../pics/map.png) center center no-repeat;
-    height: 80%;
+    height: 100%;
     position: relative;
   }

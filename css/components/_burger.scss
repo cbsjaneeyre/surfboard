@@ -4,7 +4,7 @@
   height: 25px;
   top: rem(38px);
   right: rem(33px);
-  transition: .5s;
+  transition: all .5s;
   z-index: 15;
   display: none;
 
@@ -22,6 +22,7 @@
         transform: rotate(-45deg) translateX(7px) translateY(-6px);
       }
     }
+    transition: all .5s;
   }
 
   @include tablet {

@@ -924,6 +924,11 @@ footer {
   right: 3%;
   z-index: 100;
 }
+@media screen and (max-width: 768px) {
+  .scroll {
+    display: none;
+  }
+}
 
 .scroll__item {
   margin-bottom: 0.2777777778rem;
@@ -986,20 +991,25 @@ footer {
   min-height: 41.3888888889rem;
 }
 
-.find__container {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
 .find__map {
   background: url(../pics/map.png) center center no-repeat;
-  height: 80%;
+  height: 100%;
   position: relative;
 }
 
 .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFF;
+  min-height: 4.8333333333rem;
+  font-size: 1.1666666667rem;
+  font-weight: 400;
+  padding: 1.3888888889rem 0;
+}
+
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1009,13 +1019,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 4.8333333333rem;
-  font-size: 1.1666666667rem;
-  font-weight: 400;
-  padding: 1.1111111111rem 0;
 }
 @media screen and (max-width: 480px) {
-  .footer {
+  .footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1118,10 +1124,14 @@ footer {
   height: 25px;
   top: 2.1111111111rem;
   right: 1.8333333333rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   z-index: 15;
   display: none;
+}
+.burger--active {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .burger--active .burger__line:nth-child(1) {
   opacity: 0;
