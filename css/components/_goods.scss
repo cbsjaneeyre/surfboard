@@ -1,0 +1,27 @@
+.goods {
+  position: relative;
+}
+
+.goods__slider {
+  width: 100%;
+  top: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .goods__slider-arrow-pic {
+    width: 24px;
+    height: 40px;
+  }
+
+  @include tablet {
+    padding: 0 17%;
+    top: 31%;
+  }
+
+  @include phone {
+    padding: 0;
+    top: 25%;
+  }
+}

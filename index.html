@@ -8,7 +8,7 @@
   <title>Surfboard</title>
 </head>
 
-<body>
+<body class="body--active">
   <div class="wrapper">
     <div class="main">
 
@@ -141,6 +141,113 @@
           </div>
         </div>
       </section>
+
+
+      <section class="shop">
+        <div class="container shop__container">
+          <div class="goods">
+            <div class="goods__slider">
+              <button href="#" class="goods__slider-arrow goods__slider-arrow--left">
+                <img src="./pics/left.svg" alt="left" class="goods__slider-arrow-pic">
+              </button>
+              <button href="#" class="goods__slider-arrow goods__slider-arrow--right">
+                <img src="./pics/right.svg" alt="right" class="goods__slider-arrow-pic">
+              </button>
+            </div>
+            <ul class="goods__list">
+              <li class="goods__item good">
+                <div class="goods__container">
+                  <img src="./pics/item.png" alt="longboard" class="goods__demonstration">
+                  <div class="goods__info">
+                    <div class="goods__info-char">
+                      <button class="goods__info-char-button">
+                        <svg class="goods__info-char-icon">
+                          <use xlink:href="./pics/sprite.svg#characteristics"></use>
+                        </svg>
+                        <h3 class="goods__info-char-title">Параметры</h3>
+                      </button>
+                      <ul class="goods__info-char-list">
+                        <li class="goods__info-char-item">
+                          <div class="goods__info-char-one">
+                            <svg class="goods__info-char-one-icon goods__info-char-one-icon--first">
+                              <use xlink:href="./pics/sprite.svg#first"></use>
+                            </svg>
+                            <div class="goods__info-char-one-title">Длина доски</div>
+                          </div>
+                          <div class="goods__info-char-two">от 2,5 м</div>
+                        </li>
+                        <li class="goods__info-char-item">
+                          <div class="goods__info-char-one">
+                            <svg class="goods__info-char-one-icon goods__info-char-one-icon--second">
+                              <use xlink:href="./pics/sprite.svg#second"></use>
+                            </svg>
+                            <div class="goods__info-char-one-title">Ширина доски</div>
+                          </div>
+                          <div class="goods__info-char-two">от 40 см</div>
+                        </li>
+                        <li class="goods__info-char-item">
+                          <div class="goods__info-char-one">
+                            <svg class="goods__info-char-one-icon goods__info-char-one-icon--third">
+                              <use xlink:href="./pics/sprite.svg#third"></use>
+                            </svg>
+                            <div class="goods__info-char-one-title">Толщина</div>
+                          </div>
+                          <div class="goods__info-char-two">8 см</div>
+                        </li>
+                        <li class="goods__info-char-item">
+                          <div class="goods__info-char-one">
+                            <svg class="goods__info-char-one-icon goods__info-char-one-icon--fourth">
+                              <use xlink:href="./pics/sprite.svg#fourth"></use>
+                            </svg>
+                            <div class="goods__info-char-one-title">Срок службы</div>
+                          </div>
+                          <div class="goods__info-char-two">5 лет</div>
+                        </li>
+                        <li class="goods__info-char-item">
+                          <div class="goods__info-char-one">
+                            <svg class="goods__info-char-one-icon goods__info-char-one-icon--fifth">
+                              <use xlink:href="./pics/sprite.svg#fifth"></use>
+                            </svg>
+                            <div class="goods__info-char-one-title">Вес</div>
+                          </div>
+                          <div class="goods__info-char-two">7-8 кг</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="goods__info-title">Лонгборд 2.0</div>
+                    <div class="goods__info-text">
+                      <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и
+                        ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не
+                        прилагая особых усилий ехать по ним.
+                      </p>
+                    </div>
+                    <ul class="goods__info-list">
+                      <li class="goods__info-item">
+                        <div class="goods__info-item-title">Длина доски</div>
+                        <div class="goods__info-item-numbers">от 2,5 метров</div>
+                      </li>
+                      <li class="goods__info-item">
+                        <div class="goods__info-item-title">Ширина доски</div>
+                        <div class="goods__info-item-numbers">от 40 сантиметров</div>
+                      </li>
+                    </ul>
+                    <div class="goods__info-order">
+                      <div class="goods__info-order-price">7000 ₽</div>
+                      <button class="button button--regular">Заказать</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
 
       <section class="comments">
         <div class="container comments__container">
@@ -339,11 +446,60 @@
     </ul>
   </nav>
 
-  <button class="burger">
+  <button class="burger burger--active" id="burger">
     <span class="burger__line"></span>
     <span class="burger__line"></span>
     <span class="burger__line"></span>
   </button>
+
+  <div class="overlay overlay--active" id="overlay">
+    <div class="overlay__menu" id="overlay__menu">
+      <nav class="menu">
+        <ul class="menu__list menu__list--overlay">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Серфборды</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Команда</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Меню</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Как мы работаем</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    var burger = document.querySelector("#burger");
+    var overlay = document.querySelector("#overlay");
+    var body = document.querySelector("body");
+    var link = document.querySelectorAll(".overlay .menu__link");
+
+    function toggleMenu() {
+      burger.classList.toggle("burger--active");
+      overlay.classList.toggle("overlay--active");
+      body.classList.toggle("body--active");
+    }
+
+    burger.addEventListener("click", toggleMenu);
+
+    link.forEach(function (links) {
+      links.addEventListener("click", toggleMenu);
+    })
+  </script>
 
 </body>
 

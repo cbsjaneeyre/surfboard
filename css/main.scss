@@ -10,6 +10,10 @@ $whitish: #F2F5F4;
 $profile:  #F8FAF9;
 $socials: #B3B3B3;
 $header: #1968B1;
+$area: #ECECEC;
+$char: #3A587E;
+$price: #151515;
+$char-hover: #3465A3;
 
 $tablet: 768px;
 $phone: 480px;
@@ -66,3 +70,11 @@ $z-scroll: 100;
 @import "./components/contacts";
 
 @import "./components/burger";
+
+@import "./components/shop";
+
+@import "./components/goods";
+
+@import "./components/good-item";
+
+@import "./components/overlay";
