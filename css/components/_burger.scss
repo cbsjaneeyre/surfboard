@@ -17,11 +17,11 @@
       }
 
       &:nth-child(2) {
-        transform: rotate(45deg) translateX(-15px) translateY(9px);
+        transform: rotate(45deg);
       }
 
       &:nth-child(3) {
-        transform: rotate(-45deg) translateX(-4px) translateY(-19px);
+        transform: rotate(-45deg) translateX(5px) translateY(-5px);
       }
     }
     transition: all .5s;

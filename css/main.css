@@ -1142,12 +1142,12 @@ footer {
   opacity: 0;
 }
 .burger--active .burger__line:nth-child(2) {
-  -webkit-transform: rotate(45deg) translateX(-15px) translateY(9px);
-          transform: rotate(45deg) translateX(-15px) translateY(9px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .burger--active .burger__line:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translateX(-4px) translateY(-19px);
-          transform: rotate(-45deg) translateX(-4px) translateY(-19px);
+  -webkit-transform: rotate(-45deg) translateX(5px) translateY(-5px);
+          transform: rotate(-45deg) translateX(5px) translateY(-5px);
 }
 @media screen and (max-width: 768px) {
   .burger {
