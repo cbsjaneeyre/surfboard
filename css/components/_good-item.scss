@@ -90,12 +90,16 @@
 .goods__info-char-item {
   display: flex;
   justify-content: space-between;
+  margin-bottom: rem(14px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .goods__info-char-one {
   display: flex;
   justify-content: center;
-  margin-bottom: rem(14px);
 }
 
 .goods__info-char-one-icon {

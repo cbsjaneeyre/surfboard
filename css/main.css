@@ -1359,6 +1359,10 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 0.7777777778rem;
+}
+.goods__info-char-item:last-child {
+  margin-bottom: 0;
 }
 
 .goods__info-char-one {
@@ -1368,7 +1372,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 0.7777777778rem;
 }
 
 .goods__info-char-one-icon {
