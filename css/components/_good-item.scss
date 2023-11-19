@@ -18,15 +18,15 @@
 }
 
 .goods__demonstration {
-  width: 100%;
+  width: rem(396.16px);
 
   @include tablet {
-    width: 46%;
+    width: rem(306.981px);
     margin-right: 0;
   }
   
   @include phone {
-    width: 59%;
+    width: rem(243.692px);
     margin-bottom: rem(35px);
     }
 }

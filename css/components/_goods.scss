@@ -1,5 +1,11 @@
 .goods {
   position: relative;
+
+  .bx-wrapper {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
 }
 
 .goods__slider {
@@ -9,10 +15,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 
-  .goods__slider-arrow-pic {
+  .goods__slider-arrow {
+    background: url("../pics/left.svg") center center no-repeat;
     width: 24px;
     height: 40px;
+
+    &--right {
+      transform: rotate(-180deg);
+    }
   }
 
   @include tablet {

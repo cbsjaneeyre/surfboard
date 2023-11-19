@@ -1,0 +1,36 @@
+.modal {
+  display: none;
+}
+
+.error-modal {
+  .modal__content {
+    color: #FF6961;
+  }
+}
+
+.fancybox__content {
+  padding: 0 !important;
+
+  .f-button.is-close-btn {
+    display: none;
+  }
+}
+
+.fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  padding: 37px 67px;
+}
+
+.modal__content {
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: rem(18px);
+}
