@@ -13,6 +13,7 @@ const validateFields = (form, fieldsArray) => {
   return errorFields.length == 0;
 };
 
+
 $(".form").submit(e => {
   e.preventDefault();
 
@@ -38,14 +39,12 @@ $(".form").submit(e => {
         phone: phone.val(),
         comment: comment.val(),
         to: to.val(),
-      },
-
-      error: data => { },
-
+      }
     });
 
     request.done((data) => {
       content.text(data.message);
+      $(form)[0].reset();
     });
 
     request.fail((data) => {
