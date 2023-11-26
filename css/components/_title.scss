@@ -4,20 +4,36 @@
   text-transform: uppercase;
   margin-bottom: rem(35px);
   text-align: center;
+
   &--reason {
     margin-bottom: rem(12px);
+  }
+
+  &--products {
+    text-align: initial;
+    padding: rem(109px) rem(84px);
+    margin-bottom: 0;
   }
 
   @include tablet {
     &--reason {
       margin-bottom: rem(16px);
     }
+
+    &--products {
+      padding: rem(85px) rem(40px);
   }
+}
 
   @include phone {
     &--reason {
       margin-bottom: rem(9px);
       line-height: rem(36px);
+    }
+
+    &--products {
+      padding: rem(76px) rem(10px);
+      line-height: 36px;
     }
   }
 }

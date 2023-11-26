@@ -1,12 +1,13 @@
 .find {
   background-color: $white;
   color: $blackish;
-  height: 100vh;
+  height: 100%;
+  //height: 100vh;
   min-height: rem(745px);
+  position: relative;
   }
 
   .find__map {
     background: url(../pics/map.png) center center no-repeat;
     height: 100%;
-    position: relative;
   }

@@ -4,6 +4,14 @@
   right: 3%;
   z-index: $z-scroll;
 
+  &--black .scroll__list .scroll__item--active .scroll__click {
+    border-color: $blackish;
+  }
+
+  &--black .scroll__list .scroll__item .scroll__click:before {
+    background: $blackish;
+  }
+
   @include tablet {
     display: none;
   }
@@ -15,6 +23,12 @@
     margin-bottom: 0;
   }
   &--active {
+    .scroll__click {
+      border-color: $white;
+    }
+  }
+
+  &:hover {
     .scroll__click {
       border-color: $white;
     }

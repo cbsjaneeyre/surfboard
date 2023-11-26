@@ -14,6 +14,7 @@ $area: #ECECEC;
 $char: #3A587E;
 $price: #151515;
 $char-hover: #3465A3;
+$player: #404040;
 
 $tablet: 768px;
 $phone: 480px;
@@ -84,3 +85,7 @@ $z-scroll: 100;
 @import "./components/team-list";
 
 @import "./components/modal";
+
+@import "./components/products";
+
+@import "./components/player";
