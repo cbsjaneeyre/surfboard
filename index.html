@@ -5,10 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link rel="stylesheet" href="./css/main.css">
   <title>Surfboard</title>
 </head>
@@ -16,8 +13,7 @@
 <body>
   <div class="wrapper">
     <div class="main">
-
-      <section class="welcome">
+      <section data-color="white" data-id="welcome" class="welcome">
         <div class="container welcome__container">
           <header class="header">
             <div class="logo">
@@ -28,25 +24,25 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a href="#" data-scroll="why" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Серфборды</a>
+                  <a href="#" data-scroll="shop" class="menu__link">Серфборды</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
+                  <a href="#" data-scroll="team" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Меню</a>
+                  <a href="#" data-scroll="products" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#" data-scroll="comments" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Как мы работаем</a>
+                  <a href="#" data-scroll="player" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                  <a href="#" data-scroll="find" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -62,7 +58,7 @@
           <div class="content">
             <h1 class="content__title">Профессиональные доски для серфинга</h1>
             <div class="content__info">Самый большой выбор серфбордов в мире</div>
-            <button class="button button--regular button--header">Заказать</button>
+            <button data-scroll="order" class="button button--regular button--header">Заказать</button>
           </div>
           <div class="perks">
             <ul class="perks__list">
@@ -96,8 +92,7 @@
           </div>
         </div>
       </section>
-
-      <section class="why">
+      <section data-color="black" data-id="why" class="why">
         <div class="container why__container">
           <h1 class="title title--reason">Почему Surfboard?</h1>
           <div class="reason">
@@ -146,9 +141,7 @@
           </div>
         </div>
       </section>
-
-
-      <section class="shop">
+      <section data-color="black" data-id="shop" class="shop">
         <div class="container shop__container">
           <div class="goods">
             <div class="goods__slider">
@@ -239,8 +232,6 @@
                   </div>
                 </div>
               </li>
-
-
               <li class="goods__item good">
                 <div class="goods__container">
                   <img src="./pics/shortboard.png" alt="shortboard" class="goods__demonstration">
@@ -329,86 +320,10 @@
           </div>
         </div>
       </section>
-
-      <section class="comments">
-        <div class="container comments__container">
-          <h1 class="title">Отзывы</h1>
-
-          <ul class="comments__list">
-
-            <li class="comments__item comments__item--active" data-item="one">
-              <div class="comments__profile">
-                <img src="./pics/girl.png" alt="girl" class="comments__icon">
-                <div class="comments__info">
-                  <h3 class="comments__info-title">Лучший дизайн</h3>
-                  <p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в
-                    SurfBoard.
-                    Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился
-                    прекрасный
-                    дизайн. А я катаюсь на доске, которая мне нравится)
-                  </p>
-                  <div class="comments__info-name">Ольга Макарова</div>
-                </div>
-              </div>
-            </li>
-
-            <li class="comments__item" data-item="two">
-              <div class="comments__profile">
-                <img src="./pics/boy.png" alt="boy" class="comments__icon">
-                <div class="comments__info">
-                  <h3 class="comments__info-title">Нереальная скорость</h3>
-                  <p>Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из
-                    Surfboard и не пожалел: 1 место на соревнованиях.
-                    Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
-                  </p>
-                  <div class="comments__info-name">Марк Брюлов</div>
-                </div>
-              </div>
-            </li>
-
-            <li class="comments__item" data-item="three">
-              <div class="comments__profile">
-                <img src="./pics/ginger.png" alt="ginger" class="comments__icon">
-                <div class="comments__info">
-                  <h3 class="comments__info-title">Устойчивость и безопасность</h3>
-                  <p>Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность
-                    детей на первом месте.
-                    Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети
-                    катаются и им нравится!
-                  </p>
-                  <div class="comments__info-name">Василий Поперечный</div>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <ul class="users">
-            <li class="users__item users__item--active">
-              <a href="#" class="users__link" data-link="one">
-                <img src="./pics/girl2.png" alt="girl" class="users__pic">
-              </a>
-            </li>
-            <li class="users__item">
-              <a href="#" class="users__link" data-link="two">
-                <img src="./pics/boy.png" alt="boy" class="users__pic">
-              </a>
-            </li>
-            <li class="users__item">
-              <a href="#" class="users__link" data-link="three">
-                <img src="./pics/ginger.png" alt="ginger" class="users__pic">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
-
-      <section class="team">
+      <section data-color="black" data-id="team" class="team">
         <div class="container team__container">
           <h1 class="title">Команда</h1>
           <ul class="team__list team__list--desktop">
-
             <li class="team__item">
               <div class="team__pic">
                 <img src="./pics/boris.png" alt="boris">
@@ -424,7 +339,6 @@
                 </div>
               </div>
             </li>
-
             <li class="team__item">
               <div class="team__pic">
                 <img src="./pics/olga.png" alt="olga">
@@ -440,7 +354,6 @@
                 </div>
               </div>
             </li>
-
             <li class="team__item">
               <div class="team__pic">
                 <img src="./pics/ingvar.png" alt="ingvar">
@@ -456,7 +369,6 @@
                 </div>
               </div>
             </li>
-
             <li class="team__item">
               <div class="team__pic">
                 <img src="./pics/ekaterina.png" alt="ekaterina">
@@ -472,11 +384,8 @@
                 </div>
               </div>
             </li>
-
           </ul>
-
           <ul class="team__list team__list--mobile">
-
             <li class="team__item">
               <a class="team__name">
                 <div class="team__name-title">Борис Федорович</div>
@@ -492,7 +401,6 @@
                 </div>
               </div>
             </li>
-
             <li class="team__item">
               <a class="team__name">
                 <div class="team__name-title">Ольга Невзорова</div>
@@ -508,7 +416,6 @@
                 </div>
               </div>
             </li>
-
             <li class="team__item">
               <a class="team__name">
                 <div class="team__name-title">Ингвар Нильсон</div>
@@ -524,7 +431,6 @@
                 </div>
               </div>
             </li>
-
             <li class="team__item">
               <a class="team__name">
                 <div class="team__name-title">Екатерина Иванова</div>
@@ -544,11 +450,153 @@
           </ul>
         </div>
       </section>
-
-
-
-
-      <section class="order">
+      <section data-color="white" data-id="products" class="products">
+        <h1 class="title title--products">Меню</h1>
+        <ul class="products__list">
+          <li class="products__item">
+            <a href="#" class="products__link products__link--one">
+              <div class="products__text">Лонгборды</div>
+            </a>
+            <div class="products__info">
+              <div class="products__info-container">
+                <button class="products__info-button">
+                  <img src="./pics/close.svg" alt="close">
+                </button>
+                <p>Устойчивая доска для новичков.
+                  На них легко лежать, сидеть, грести, разгребаться на волны и ехать.
+                  Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая
+                  особых усилий ехать по ним.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <a href="#" class="products__link products__link--two">
+              <div class="products__text">Шортборды</div>
+            </a>
+            <div class="products__info">
+              <div class="products__info-container">
+                <button class="products__info-button">
+                  <img src="./pics/close.svg" alt="close">
+                </button>
+                <p>Устойчивая доска для новичков.
+                  На них легко лежать, сидеть, грести, разгребаться на волны и ехать.
+                  Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая
+                  особых усилий ехать по ним.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <a href="#" class="products__link products__link--three">
+              <div class="products__text">Софттопы</div>
+            </a>
+            <div class="products__info">
+              <div class="products__info-container">
+                <button class="products__info-button">
+                  <img src="./pics/close.svg" alt="close">
+                </button>
+                <p>Устойчивая доска для новичков.
+                  На них легко лежать, сидеть, грести, разгребаться на волны и ехать.
+                  Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая
+                  особых усилий ехать по ним.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section data-color="black" data-id="comments" class="comments">
+        <div class="container comments__container">
+          <h1 class="title">Отзывы</h1>
+          <ul class="comments__list">
+            <li class="comments__item comments__item--active" data-item="one">
+              <div class="comments__profile">
+                <img src="./pics/girl.png" alt="girl" class="comments__icon">
+                <div class="comments__info">
+                  <h3 class="comments__info-title">Лучший дизайн</h3>
+                  <p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в
+                    SurfBoard.
+                    Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился
+                    прекрасный
+                    дизайн. А я катаюсь на доске, которая мне нравится)
+                  </p>
+                  <div class="comments__info-name">Ольга Макарова</div>
+                </div>
+              </div>
+            </li>
+            <li class="comments__item" data-item="two">
+              <div class="comments__profile">
+                <img src="./pics/boy.png" alt="boy" class="comments__icon">
+                <div class="comments__info">
+                  <h3 class="comments__info-title">Нереальная скорость</h3>
+                  <p>Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из
+                    Surfboard и не пожалел: 1 место на соревнованиях.
+                    Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+                  </p>
+                  <div class="comments__info-name">Марк Брюлов</div>
+                </div>
+              </div>
+            </li>
+            <li class="comments__item" data-item="three">
+              <div class="comments__profile">
+                <img src="./pics/ginger.png" alt="ginger" class="comments__icon">
+                <div class="comments__info">
+                  <h3 class="comments__info-title">Устойчивость и безопасность</h3>
+                  <p>Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность
+                    детей на первом месте.
+                    Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети
+                    катаются и им нравится!
+                  </p>
+                  <div class="comments__info-name">Василий Поперечный</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="users">
+            <li class="users__item users__item--active">
+              <a href="#" class="users__link" data-link="one">
+                <img src="./pics/girl2.png" alt="girl" class="users__pic">
+              </a>
+            </li>
+            <li class="users__item">
+              <a href="#" class="users__link" data-link="two">
+                <img src="./pics/boy.png" alt="boy" class="users__pic">
+              </a>
+            </li>
+            <li class="users__item">
+              <a href="#" class="users__link" data-link="three">
+                <img src="./pics/ginger.png" alt="ginger" class="users__pic">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section data-color="black" data-id="player" class="player-section">
+        <div class="container player-section__container">
+          <h1 class="title">Как мы работаем</h1>
+          <div class="player">
+            <video id="video" class="player__video" poster="./pics/player.png">
+              <source src="./footage/surfing.mp4" type="video/mp4">
+            </video>
+            <img src="./pics/play-button.svg" alt="play-button" class="player__button play">
+          </div>
+          <div class="player__toolbar">
+            <div class="player__duration">
+              <div class="player__button-duration play"></div>
+              <input type="range" class="player__duration-range" id="duration-range">
+            </div>
+            <div class="player__sound">
+              <img src="./pics/sound.svg" alt="sound-button" class="player__button-sound" id="mic-level">
+              <div class="player__sound-volume">
+                <input type="range" class="player__duration-range player__duration-range--sound" id="sound-range"
+                  oninput="progressSound()">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-color="white" data-id="order" class="order">
         <div class="container order__container">
           <h1 class="title">Закажите доску</h1>
           <form class="form">
@@ -623,19 +671,8 @@
           </form>
         </div>
       </section>
-
-      <div class="modal" id="modal">
-        <div class="modal__container">
-          <div class="modal__content">Сообщение отправлено</div>
-          <button class="button js-button button--regular">Закрыть</button>
-        </div>
-      </div>
-
-
-
-
-      <section class="find">
-        <div class="find__map"></div>
+      <section data-color="black" data-id="find" class="find">
+        <div id="map" class="find__map"></div>
         <footer class="footer">
           <div class="container footer__container">
             <address class="contacts footer__contacts">
@@ -686,45 +723,48 @@
       </section>
     </div>
   </div>
-
+  <div class="modal" id="modal">
+    <div class="modal__container">
+      <div class="modal__content">Сообщение отправлено</div>
+      <button class="button js-button button--regular">Закрыть</button>
+    </div>
+  </div>
   <nav class="scroll">
     <ul class="scroll__list">
       <li class="scroll__item scroll__item--active">
-        <a href="#" class="scroll__click"></a>
+        <a href="#" data-scroll="welcome" class="scroll__click"></a>
       </li>
       <li class="scroll__item">
-        <a href="#" class="scroll__click"></a>
+        <a href="#" data-scroll="why" class="scroll__click"></a>
       </li>
       <li class="scroll__item">
-        <a href="#" class="scroll__click"></a>
+        <a href="#" data-scroll="shop" class="scroll__click"></a>
       </li>
       <li class="scroll__item">
-        <a href="#" class="scroll__click"></a>
+        <a href="#" data-scroll="team" class="scroll__click"></a>
       </li>
       <li class="scroll__item">
-        <a href="#" class="scroll__click"></a>
+        <a href="#" data-scroll="products" class="scroll__click"></a>
       </li>
       <li class="scroll__item">
-        <a href="#" class="scroll__click"></a>
+        <a href="#" data-scroll="comments" class="scroll__click"></a>
       </li>
       <li class="scroll__item">
-        <a href="#" class="scroll__click"></a>
+        <a href="#" data-scroll="player" class="scroll__click"></a>
       </li>
       <li class="scroll__item">
-        <a href="#" class="scroll__click"></a>
+        <a href="#" data-scroll="order" class="scroll__click"></a>
       </li>
       <li class="scroll__item">
-        <a href="#" class="scroll__click"></a>
+        <a href="#" data-scroll="find" class="scroll__click"></a>
       </li>
     </ul>
   </nav>
-
   <button class="burger" id="burger">
     <span class="burger__line"></span>
     <span class="burger__line"></span>
     <span class="burger__line"></span>
   </button>
-
   <div class="overlay" id="overlay">
     <div class="overlay__menu" id="overlay__menu">
       <nav class="menu">
@@ -754,33 +794,19 @@
       </nav>
     </div>
   </div>
-
-  <script>
-    var burger = document.querySelector("#burger");
-    var overlay = document.querySelector("#overlay");
-    var body = document.querySelector("body");
-    var link = document.querySelectorAll(".overlay .menu__link");
-
-    function toggleMenu() {
-      burger.classList.toggle("burger--active");
-      overlay.classList.toggle("overlay--active");
-      body.classList.toggle("body--active");
-    }
-
-    burger.addEventListener("click", toggleMenu);
-
-    link.forEach(function (links) {
-      links.addEventListener("click", toggleMenu);
-    });
-  </script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/team.js"></script>
   <script src="./js/users.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/map.js"></script>
+  <script src="./js/products.js"></script>
+  <script src="./js/player.js"></script>
+  <script src="./js/burger.js"></script>
+  <script src="./js/scroll.js"></script>
 </body>
 
 </html>
