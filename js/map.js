@@ -18,8 +18,6 @@ const init = () => {
   }
 );
 
-myMap.controls.add('zoomControl');
-
 myMap.geoObjects.add(myPlacemark);
 
 myMap.behaviors.disable("scrollZoom");
