@@ -12,7 +12,7 @@ const init = () => {
   {},
   { draggable: false,
     iconLayout: "default#image",
-    iconImageHref: "../pics/pointer.svg",
+    iconImageHref: "/pics/pointer.svg",
     iconImageSize: [58, 73],
     iconImageOffset: [-35, -52]
   }
