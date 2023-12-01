@@ -14,11 +14,14 @@ const showSection = (section) => {
     const currentSection = sections.eq(section);
     const colorSection = currentSection.attr("data-color");
     const scroll = $(".scroll");
+    const burger = $(".burger");
 
     if (colorSection == "black") {
       scroll.addClass("scroll--black");
+      burger.addClass("burger--black");
     } else {
       scroll.removeClass("scroll--black");
+      burger.removeClass("burger--black");
     }
 
     main.css({

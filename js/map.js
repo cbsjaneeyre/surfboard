@@ -12,13 +12,15 @@ const init = () => {
   {},
   { draggable: false,
     iconLayout: "default#image",
-    iconImageHref: "../pics/pointer.png",
+    iconImageHref: "../pics/pointer.svg",
     iconImageSize: [58, 73],
     iconImageOffset: [-35, -52]
   }
 );
 
 myMap.geoObjects.add(myPlacemark);
+
+myMap.controls.add("zoomControl");
 
 myMap.behaviors.disable("scrollZoom");
 };
